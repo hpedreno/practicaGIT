@@ -32,10 +32,11 @@ namespace practica5_1
             this.aluNombre = new System.Windows.Forms.TextBox();
             this.labelAluNombre = new System.Windows.Forms.Label();
             this.labelAluNota = new System.Windows.Forms.Label();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.labelListaAlumnos = new System.Windows.Forms.Label();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // aluNombre
@@ -64,13 +65,6 @@ namespace practica5_1
             this.labelAluNota.Size = new System.Drawing.Size(43, 20);
             this.labelAluNota.TabIndex = 2;
             this.labelAluNota.Text = "Nota";
-            // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(402, 52);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(134, 20);
-            this.aluNota.TabIndex = 3;
             // 
             // button1
             // 
@@ -102,20 +96,28 @@ namespace practica5_1
             this.listaAlumnos.Size = new System.Drawing.Size(776, 262);
             this.listaAlumnos.TabIndex = 6;
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(402, 53);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(120, 20);
+            this.aluNota.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.labelListaAlumnos);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.labelAluNota);
             this.Controls.Add(this.labelAluNombre);
             this.Controls.Add(this.aluNombre);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,10 +129,9 @@ namespace practica5_1
         private System.Windows.Forms.Label labelAluNota;
         private System.Windows.Forms.Label labelListaAlumnos;
         private System.Windows.Forms.TextBox aluNombre;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.TextBox listaAlumnos;
         private System.Windows.Forms.Button button1;
-
+        private System.Windows.Forms.NumericUpDown aluNota;
     }
 }
 
