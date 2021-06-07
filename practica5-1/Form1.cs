@@ -29,7 +29,7 @@ namespace practica5_1
             miAlumno.Nombre = aluNombre.Text;
             miAlumno.Nota = Convert.ToInt32(aluNota.Text);
             
-            /* CÓDIGO AÑADIDO POR hectorC0de el puto amo */
+            /* CÓDIGO AÑADIDO POR hectorC0de */
             if (miAlumno.Nota < 5) {
                 miAlumnoNotaTexto = "Suspenso";
             } else if (miAlumno.Nota < 7) {
